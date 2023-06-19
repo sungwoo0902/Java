@@ -28,16 +28,16 @@ public class Test05 {
 		int value = sc.nextInt();
 		
 		int start = 0;
-		int end = arr.length -1; // 왜 -1을 하는가?
+		int end = arr.length -1; 
 		int loc = 0;
 		boolean state = false;
 		
 		while(start <= end) {
 			
-			int mid = (start + end) / 2; // mid의 값은 순번? 수치?
+			int mid = (start + end) / 2;
 			
 			if(arr[mid] > value) {
-				end = mid - 1;
+				end = mid - 1; 	
 			}else if(arr[mid] < value) {
 				start = mid + 1;
 			}else {

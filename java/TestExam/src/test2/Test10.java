@@ -1,10 +1,26 @@
 package test2;
 
+/*
+ * 날짜 : 2023/06/16
+ * 이름 : 홍길동
+ * 내용 : 자바 파보나치 수열 재귀 메서드 연습문제
+ */
 public class Test10 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		for(int i=0; i<10; i++) {
+			System.out.print(fibo(i)+" ");
+		}
+	}
+	
+	public static int fibo(int n) {
+		
+		if(n<=1) {
+			return n;
+		}
+		
+		return fibo(n-1) + fibo(n-2);
 	}
 
 }
