@@ -14,10 +14,10 @@ class AAA{
 		System.out.println("AAA : method...");
 	}
 	public void method2() {
-		System.out.println("BBB : method2...");
+		System.out.println("AAA : method2...");
 	}
 	public void method3() {
-		System.out.println("CCC : method3...");
+		System.out.println("AAA : method3...");
 	}
 }
 
@@ -25,7 +25,7 @@ class BBB extends AAA{
 	
 	@Override
 	public void method2() {
-		System.out.println("AAA : method...");
+		System.out.println("BBB : method...");
 	}
 	
 	// Overload
@@ -38,11 +38,11 @@ class CCC extends BBB{
 	
 	@Override
 	public void method1() {
-		System.out.println("AAA : method...");
+		System.out.println("CCC : method...");
 	}
 	@Override
 	public void method2() {
-		System.out.println("BBB : method2...");
+		System.out.println("CCC : method2...");
 	}
 	// Overload
 	public void method3(int a, int b) {
