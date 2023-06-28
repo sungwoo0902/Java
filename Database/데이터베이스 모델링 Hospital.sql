@@ -8,7 +8,7 @@ INSERT INTO `departments` VALUES('107', '흉부외과', '류성룡', '051-123-01
 INSERT INTO `departments` VALUES('108', '정형외과', '송상현', '051-123-0108');
 INSERT INTO `departments` VALUES('109', '신경외과', '이순신', '051-123-0109');
 INSERT INTO `departments` VALUES('110', '비뇨기과', '정약용', '051-123-0110');
-INSERT INTO `departments` VALUES('111', '안과과', '박지원', '051-123-011');
+INSERT INTO `departments` VALUES('111', '안과', '박지원', '051-123-011');
 INSERT INTO `departments` VALUES('112', '치과', '전봉준', '051-123-0112');
 
 INSERT INTO `doctors` VALUES('D101101', '김유신', '1976-01-21', 'M', '101', '과장', '010-1101-1976', 'kimys@bw.com');
@@ -174,8 +174,6 @@ SELECT
 FROM `departments` AS a
 LEFT JOIN `doctors` AS b ON a.dep_no = b.dep_no
 WHERE `doc_id` IS NULL;
-
-UPDATE `departments` 
 
 
 
